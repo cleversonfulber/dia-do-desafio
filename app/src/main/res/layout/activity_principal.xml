@@ -50,6 +50,63 @@
             />
 
     </LinearLayout>
+
+    <Button
+        android:layout_marginBottom="10dp"
+        android:text="@string/rankings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#fff"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:onClick="ranking"/>
+
+    <Button
+        android:id="@+id/btnIniciar"
+        android:layout_marginBottom="10dp"
+        android:text="@string/iniciarMonitoramento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:onClick="iniciarMonitoramento"/>
+
+    <Button
+        android:id="@+id/btnParar"
+        android:visibility="gone"
+        android:layout_marginBottom="10dp"
+        android:text="@string/pararMonitoramento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:onClick="pararMonitoramento"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTempo"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvAceleracao"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvAceleracaoMedia"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:gravity="center"/>
     
     <Button
         android:text="@string/log_out"

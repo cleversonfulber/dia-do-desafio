@@ -5,5 +5,10 @@
     <string name="revoke">Revogar</string>
     <string name="not_closse_sessao">Não foi possível encerrar a sessão.</string>
     <string name="not_revoke">Não foi possível revogar o acesso.</string>
+    <string name="iniciar">Iniciar</string>
+    <string name="parar">Parar</string>
+    <string name="iniciarMonitoramento">Iniciar Monitoramento</string>
+    <string name="pararMonitoramento">Parar Monitoramento</string>
+    <string name="rankings">Visualizar Ranking</string>
 
 </resources>

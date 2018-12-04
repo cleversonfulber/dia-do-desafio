@@ -4,6 +4,7 @@ buildscript {
     
     repositories {
         google()
+        mavenCentral()
         jcenter()
     }
     dependencies {
@@ -18,6 +19,11 @@ buildscript {
 allprojects {
     repositories {
         google()
+        mavenLocal()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+        maven { url 'https://maven.google.com' }
+        maven { url 'https://repo.spring.io/libs-milestone' }
         jcenter()
     }
 }
