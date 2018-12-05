@@ -31,6 +31,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.TimeZone;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -171,7 +172,9 @@ public class PrincipalActivity extends AppCompatActivity implements GoogleApiCli
             public void run() {
                 tempo += 1;
                 Date date = new Date(tempo * 1000L);
-                String format = new SimpleDateFormat("HH:mm:ss").format(date);
+                SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
+                sdf.setTimeZone(TimeZone.getTimeZone("GMT"));
+                String format = sdf.format(date);
                 tvTempo.setText("Tempo: " + format);
 
                 DecimalFormat df = new DecimalFormat();
