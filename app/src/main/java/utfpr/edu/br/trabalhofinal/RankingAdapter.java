@@ -10,6 +10,7 @@ import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
+import java.util.TimeZone;
 
 public class RankingAdapter extends BaseAdapter {
 
@@ -53,7 +54,9 @@ public class RankingAdapter extends BaseAdapter {
         acelerometro.setText(df.format(ranking.getValor()));
 
         Date date = new Date(ranking.getTempo() * 1000L);
-        String format = new SimpleDateFormat("HH:mm:ss").format(date);
+        SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
+        sdf.setTimeZone(TimeZone.getTimeZone("GMT"));
+        String format = sdf.format(date);
         tempo.setText(format);
 
         return view;
