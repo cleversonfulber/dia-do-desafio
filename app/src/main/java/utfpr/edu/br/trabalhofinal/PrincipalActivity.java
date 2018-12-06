@@ -215,4 +215,17 @@ public class PrincipalActivity extends AppCompatActivity implements GoogleApiCli
         Intent intent = new Intent(this, RankingActivity.class);
         startActivity(intent);
     }
+
+    public void grupos(View view) {
+
+        Intent intent = new Intent(this, GruposActivity.class);
+        startActivity(intent);
+
+    }
+
+    public void criarGrupos(View view) {
+
+        Intent intent = new Intent(this, ListarGrupos.class);
+        startActivity(intent);
+    }
 }

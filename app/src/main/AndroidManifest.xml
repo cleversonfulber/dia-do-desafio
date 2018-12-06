@@ -18,8 +18,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity"></activity>
-        <activity android:name=".RankingActivity"></activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RankingActivity" />
+        <activity android:name=".GruposActivity" />
+        <activity android:name=".ListarGrupos"></activity>
     </application>
 
 </manifest>
